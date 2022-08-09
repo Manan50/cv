@@ -2,6 +2,25 @@
 
 $(document).ready(function () {
 
+  function onReady(callback) {
+  var intervalId = window.setInterval(function() {
+    if (document.getElementsByTagName('body')[0] !== undefined) {
+      window.clearInterval(intervalId);
+      callback.call(this);
+    }
+  }, 3000);
+}
+
+function setVisible(selector, visible) {
+  document.querySelector(selector).style.display = visible ? 'block' : 'none';
+    document.querySelector(selector).style.transition = "0.5s";
+}
+
+onReady(function() {
+  setVisible('.mainpage', true);
+  setVisible('.loadingcontainer', false);
+});
+
 
   var typed = new Typed("#title2",{
     strings: [,"<mark>I'm a Web Developer.</mark>", "<mark>I'm a Game Developer.</mark>", "<mark>I'm an Android Developer.</mark>"],
