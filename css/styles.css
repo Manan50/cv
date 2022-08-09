@@ -1062,6 +1062,10 @@ animation-duration: 2s;
   bottom: 0;
   transition-delay: 0s;
 }
+.container1 .card1:active .content{
+  bottom: 0;
+  transition-delay: 0s;
+}
 .container1 .card1 .content .contentBx h3{
 
   text-transform: uppercase;
