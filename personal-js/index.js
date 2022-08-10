@@ -8,7 +8,7 @@ $(document).ready(function () {
       window.clearInterval(intervalId);
       callback.call(this);
     }
-  }, 1000);
+  }, 3000);
 }
 
 function setVisible(selector, visible) {
