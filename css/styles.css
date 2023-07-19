@@ -963,7 +963,7 @@ body.day {
   background: #ffce54;
 }
 
-@media (max-width: 768px) {
+@ (max-width: 768px) {
   #sunmoon {
     position: relative;
     width: clamp(100px, 50vmin, 100px);
@@ -982,7 +982,7 @@ body.day {
   }
 }
 
-@media (max-width: 480px) {
+@ (max-width: 480px) {
   #sunmoon {
     position: relative;
     width: clamp(100px, 50vmin, 100px);
@@ -1777,7 +1777,7 @@ body.day {
   }
 
   .aboutprofile img {
-    left: 50% !important;
+    /* left: 50% !important; */
   }
 
   .flexabout {
@@ -1819,7 +1819,7 @@ body.day {
   }
 
   .head {
-    font-size: 3.6rem;
+    font-size: 2.6rem;
   }
 
   .skill {
