@@ -1,666 +1,821 @@
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Manan Parikh</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="icon" href="favicon.ico">
   <script src="https://kit.fontawesome.com/6481748e60.js" crossorigin="anonymous"></script>
 
 
 </head>
+
 <body>
   <div class="loadingcontainer">
-  <div class="square">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+    <div class="square">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
 
   <div class="mainpage">
-
-
-  <div id="progressbar"></div>
-  <div id="scrollpath"></div>
-  <div class="maincontainer">
-
-    <section class="headerwrap">
-    <div  class="profile">
-    <img src="images/spaceanim.gif" alt="manan-parikh">
-  </div>
-  <div class="bannercontainer">
-    <div class="innerbanner">
-    <h3>Hello, I'm </h3>
-    <h1 class="head" style="">MANAN PARIKH </h1>
-  <span>
-        <h2 id="title2"><mark></mark></h2>
-  </span>
-  <a class="btn2 aboutmebutn" href="#about" id="aboutme1" style="">About Me</a>
-  </div>
-  </div>
-  </section>
-  <header class="containernav">
-  <nav class="navbar navbar-dark navbar-expand-lg ms-auto " style="">
-
-  <a class="navbar-brand mb-0 brand1" href="#" style="color:#395B64;"><span>PORT</span>FOLIO</a>
-      <button class="navbar-toggler togglertype text-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="text-collapsed"><i class="fa-solid fa-bars-staggered"></i></span>
-        <span class="text-expanded"><i class="fa-solid fa-xmark"></i></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <div class='navbar-expander'></div>
-      <ul class="navbar-nav  ms-auto ">
-          <li class="nav-item ">
-              <a class="nav-link" href="#top" style="color:#395B64;">Home</a>
-          </li>
-          <li class="nav-item ">
-              <a class="nav-link" href="#skillsect" style="color:#395B64;">Projects</a>
-          </li>
-          <li class="nav-item ">
-              <a class="nav-link" href="#contactitem" style="color:#395B64;">Contact</a>
-          </li>
-      </ul>
+    <div class="cursor">
+      <div class="clickanimation">
+        <div class="shape circle big"></div>
+        <div class="shape circle small"></div>
+        <img class="shape fa-solid sword" width="15" height="15" src="https://img.icons8.com/hatch/64/da44ee/sword.png"
+          alt="sword" />
+        <div class="shape fa-solid fa-heart fa-2xs" style="color: #46ec7d;"></div>
+        <div class="shape fa-solid fa-shield-halved fa-2xs" style="color: #e1ec46;"></div>
       </div>
-    </nav>
-  </header>
-  <div class="style">
-    <section class="container-about" id="about">
-      <div class="aboutheading">
-        <h2>About Me</h2>
-      </div>
-        <hr>
-        <div class="flexabout">
-        <div class="infoabout w50">
-          <h3>Who's this guy?</h3>
-          <p class="about-info">I am a App/Game Developer. I have passion for UI effects in apps, and creating intuitive, dynamic user experiences.
-            As the saying goes "<strong style="font-weight: bolder; text-decoration: underline;">Good softwares, like wine, takes time</strong>".
-            And the games that I make are always fun and easy to play and hard to master. Check out the type of projects below.
-        </p>
+    </div>
+
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+    <div class="maincontainer">
+      <div id="sunmoon" class="intro"></div>
+      <span class="click-me"></span>
+      <!--  <img src="./images/spaceanim.gif" alt=""> -->
+      <svg height="0" width="0" style="position: fixed">
+        <defs>
+          <clipPath id="sunmoon_clip" clipPathUnits="objectBoundingBox">
+            <path d="M.29 0A.29.29 0 1 1 0 .29V1h1V0H.29z"></path>
+          </clipPath>
+        </defs>
+        <defs>
+          <filter id="blob">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 30 -12" result="blob">
+            </feColorMatrix>
+          </filter>
+        </defs>
+      </svg>
+      <section class="headerwrap">
+        <div class="profile">
+          <div class="stars"></div>
+          <div class="stars2"></div>
+          <div class="stars3"></div>
+
         </div>
-  <div class="aboutprofile ">
-    <img src="images/aboutmydp.jpeg" alt="">
-  </div>
-  </div>
+        <div class="bannercontainer">
+          <div class="innerbanner">
+            <h3>Hello, I'm </h3>
+            <h1 class="head" style="">MANAN PARIKH</h1>
+            <span style="display: flex;">
+              <h2 id="title2"><mark></mark></h2>
+            </span>
+            <a class="btn2 aboutmebutn" href="#about" id="aboutme1" style="">About Me</a>
+          </div>
+          <div class="front-social">
+            <ul>
+              <li>
+              <a href="https://github.com/Manan50"><i class="socialfa fa-brands fa-github"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/manan_parikh_/"><i class="socialfa fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/manan-parikh-3a6410182/"><i class="socialfa fa-brands fa-linkedin"></i></a>
+            </li> 
+            <li>
+              <a href="https://play.google.com/store/apps/dev?id=6962589146688097851"><i class="socialfa fa-brands fa-google-play"></i></a>
+            </li>
+          </ul>
+          </div>
+        </div>
       </section>
-  <hr>
+      <header class="containernav">
+        <nav class="navbar navbar-dark navbar-expand-lg ms-auto " style="">
+
+          <a class="navbar-brand mb-0 brand1" href="#" style="color:#395B64;"><span>PORT</span>FOLIO</a>
+          <button class="navbar-toggler togglertype text-toggle" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="text-collapsed"><i class="fa-solid fa-bars-staggered"></i></span>
+            <span class="text-expanded"><i class="fa-solid fa-xmark"></i></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class='navbar-expander'></div>
+            <ul class="navbar-nav  ms-auto ">
+              <li class="nav-item ">
+                <a class="nav-link" href="#top" style="color:#395B64;">Home</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#skillsect" style="color:#395B64;">Projects</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#contactitem" style="color:#395B64;">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="style">
+        <section class="container-about" id="about">
+          <div class="aboutheading">
+            <h2>About Me</h2>
+          </div>
+          <hr>
+          <div class="flexabout">
+            <div class="infoabout w50">
+              <h3>Who's this guy?</h3>
+              <p class="about-info">An aspiring full-stack engineer with an aptitude for problem-solving and critical thinking who is self-driven, fast to pick up new skills, and motivated. 
+                I have a strong desire to learn new technologies, and a fantastic communicator. 
+                <strong style="font-weight: bolder;">Always eager to pick up new talents that will help me in my mission to accomplish the objectives I have set.</strong>
+                I'm ready to work in a variety of fields that will allow me to gain a wide range of experiences and boost my professional development.
+                Excellent practical knowledge of C#, Python, Java, Javascript (Node.js, React.js), and C++. considerable expertise in the creation and administration of web applications, android applications, and different databases.
+              </p>
+            </div>
+            <div class="aboutprofile ">
+              <img src="images/aboutmydp.JPEG" alt="">
+            </div>
+          </div>
+        </section>
+        <hr>
+      </div>
+      <div class="skillsect" id="skillsect">
+        <h2 class="tech">Projects</h2>
+        <p>Always delivering more than expected.</p>
+        <div class="statsSection" id="stats">
+          <div class="container-projects">
+            <ul>
+              <li class="list activeselection" data-color="#d2e8f2" data-filter="all">All</li>
+              <li class="list" data-color="#d2e8f2" data-filter="SoftwareProjects">Software Projects</li>
+              <li class="list" data-color="#d2e8f2" data-filter="DataProjects">Data Projects</li>
+              
+              <li class="list" data-color="#FC5185" data-filter-published="published">Published Apps</li>
+            </ul>
+            <div class="Swprojects" data-items="SoftwareProjects">
+              <ul class=" sublist ">  
+              <li class="list" data-color="#2E0249" data-filter="android">Android</li>
+                <li class="list" data-color="#233E8B" data-filter="unity">Unity</li>
+                <li class="list" data-color="#CCD6A6" data-filter="ios">IOS</li>
+                <li class="list" data-color="#EB4747" data-filter="reactnative">React-Native</li>
+                <li class="list" data-color="#892CDC" data-filter="web-sites">Websites</li>
+                </ul>
+            </div>
+            <div class="projectsdone col-sm-15 container1">
+              <!-- <div class="animate__animated projmade projectbox card1" data-items="android" data-items-published="">
+                <div class="projtext imgBx">
+                  <img src="androidimages/connect3.jpeg" alt="android">
+                </div>
+                <div class="content">
+                  <div class="contentBx">
+                    <h3 style="">Connect3</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger"
+                      onclick="modalToggle()"><span>Learn More</span></a>
+
+                  </div>
+                </div>
+              </div> -->
+              <div class="animate__animated projmade projectbox card1 " data-items="unity"
+                data-items-published="published">
+                <div class="projtext imgBx">
+                  <img src="images/dodgeblock.jpeg" alt="unity">
+                </div>
+                <div class="content">
+                  <div class="contentBx">
+                    <h3 style="">Blockzzs</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger "
+                      onclick="modal1Toggle()"><span>Learn More</span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="animate__animated projmade projectbox card1" data-items="ios" data-items-published="">
+                <div class="projtext imgBx">
+                  <img src="iosimages/iosproj1refu.jpeg" alt="swift-ios">
+                </div>
+                <div class="content">
+                  <div class="contentBx" id="contenttext">
+                    <h3 style="">RefuIndia</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger "
+                      onclick="modal2Toggle()"><span>Learn More</span></a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="animate__animated projmade projectbox card1" data-items="reactnative" data-items-published="">
+                <div class="projtext imgBx">
+                  <img src="reactimg/supercarappproj.jpeg" alt="swift-ios">
+                </div>
+                <div class="content">
+                  <div class="contentBx" id="contenttext">
+                    <h3 style="">Super-Cars App</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger "
+                      onclick="modal3Toggle()"><span>Learn More</span></a>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="animate__animated projmade projectbox card1 " data-items="android" data-items-published="">
+                <div class="projtext imgBx">
+                  <img src="androidimages/silenmodeon.jpeg" alt="android">
+                </div>
+                <div class="content">
+                  <div class="contentBx" id="contenttext">
+                    <h3 style="">Silent Mode Toggle</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger "
+                      onclick="modal4Toggle()"><span>Learn More</span></a>
+
+                  </div>
+                </div>
+              </div> -->
+              <div class="animate__animated projmade projectbox card1" data-items="web-sites" data-items-published="">
+                <div class="projtext imgBx">
+                  <img src="images/supercarround.jpeg" alt="unity">
+                </div>
+                <div class="content">
+                  <div class="contentBx" id="contenttext">
+                    <h3 style="">Super-Cars Website</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger "
+                      href="https://manan50.github.io/Supercars/"><span>Open</span></a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="animate__animated projmade projectbox card1" data-items="unity"
+                data-items-published="published">
+                <div class="projtext imgBx">
+                  <img src="images/hexagon.jpeg" alt="unity">
+                </div>
+                <div class="content">
+                  <div class="contentBx" id="contenttext">
+                    <h3 style="">Ultimate Hexagon</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger "
+                      onclick="modal5Toggle()"><span>Learn More</span></a>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="animate__animated projmade projectbox card1 " data-items="android"
+                data-items-published="published">
+                <div class="projtext imgBx">
+                  <img src="androidimages/viplayer.jpeg" alt="android">
+                </div>
+                <div class="content">
+                  <div class="contentBx" id="contenttext">
+                    <h3 style="">ViPlayer</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger "
+                      onclick="modal6Toggle()"><span>Learn More</span></a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="animate__animated projmade projectbox card1" data-items="unity"
+                data-items-published="published">
+                <div class="projtext imgBx">
+                  <img src="images/flyflygame.jpeg" alt="unity">
+                </div>
+                <div class="content">
+                  <div class="contentBx" id="contenttext">
+                    <h3 style="">FlyFly-TillYouScore</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger "
+                      onclick="modal7Toggle()"><span>Learn More</span></a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="animate__animated projmade projectbox card1" data-items="web-sites" data-items-published="">
+                <div class="projtext imgBx">
+                  <img src="images/dice.jpeg" alt="unity">
+                </div>
+                <div class="content">
+                  <div class="contentBx" id="contenttext">
+                    <h3 style="">Dicey</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger "
+                      href="https://manan50.github.io/diceGame/"><span>Open</span></a>
+
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="animate__animated projmade projectbox card1" data-items="unity" data-items-published="">
+                <div class="projtext imgBx">
+                  <img src="images/dropit.jpeg" alt="unity">
+                </div>
+                <div class="content">
+                  <div class="contentBx" id="contenttext">
+                    <h3 style="">Stocks/Crypto Price Prediction</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger "
+                      onclick="modal8Toggle()"><span>Learn More</span></a>
+
+                  </div>
+                </div>
+              </div> -->
+              <div class="animate__animated projmade projectbox card1" data-items="web-sites" data-items-published="">
+                <div class="projtext imgBx">
+                  <img src="images/fitnessrounddemo.jpeg" alt="unity">
+                </div>
+                <div class="content">
+                  <div class="contentBx" id="contenttext">
+                    <h3 style="">Fitness</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger "
+                      href="https://manan50.github.io/fitness/"><span>Open</span></a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="animate__animated projmade projectbox card1" data-items="unity" data-items-published="">
+                <div class="projtext imgBx">
+                  <img src="images/Alpha-count.jpeg" alt="unity">
+                </div>
+                <div class="content">
+                  <div class="contentBx" id="contenttext">
+                    <h3 style="">Alpha-Learners</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger "
+                      onclick="modal9Toggle()"><span>Learn More</span></a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="animate__animated projmade projectbox card1" data-items="unity"
+                data-items-published="published">
+                <div class="projtext imgBx">
+                  <img src="images/Gametapitapicon.jpeg" alt="unity">
+                </div>
+                <div class="content">
+                  <div class="contentBx" id="contenttext">
+                    <h3 style="">Lost-Trials</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger "
+                      onclick="modal10Toggle()"><span>Learn More</span></a>
+
+                  </div>
+                </div>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="connect">
+        <h2>FOUND MY WORK INTERESTING?</h2>
+        <h3>I am passionate about learning and trying out new things. 😄</h3>
+        <h4> Would Love to hear from ya! 😉</h4>
+        <div class="contact" id="contactitem">
+          <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" xmlns=""
+            class="svgcolor-light">
+            <path d="M0 0 L50 100 L100 0 Z" data-color='#d2e8f2'></path>
+          </svg>
+          <h1
+            style="margin-top: 20px; color: #ffabe1; font-family: 'Barlow Condensed', sans-serif; line-height: 5.2rem;">
+            Contact</h1>
+          <section class="container-fluid ">
+            <form class="submit" name="my_form" action="https://getform.io/f/108e8e04-ebea-4e1e-8bda-888a2a25d5cf"
+              method="POST" enctype="multipart/form-data">
+              <div class="col-sm-6 contactform">
+                <input type="text" name="first-name" class="form-control" placeholder="First name"
+                  aria-label="First name" required="required">
+              </div>
+
+              <div class="col-sm-6 contactform">
+                <input type="email" name="email" class="form-control" id="email-id" placeholder="@example.com"
+                  required="required">
+              </div>
+
+              <div class="col-sm-6 contactform">
+                <textarea type="text" name="text_message" class="form-control text-area " id="text-area"
+                  maxlength="1000" required="required" placeholder="Message"></textarea>
+              </div>
+              <br>
+              <button type="submit" value="Submit" style="color: #e8e8e8;" class="btn btn-sm btn-dark">Submit</button>
+            </form>
+          </section>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="social-media">
+        <a href="https://github.com/Manan50"><i class="githubanim fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/manan_parikh_/"><i class="instagramanim fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/manan-parikh-3a6410182/"><i class="linkedinanim fa-brands fa-linkedin"></i></a>
+        <a href="https://play.google.com/store/apps/dev?id=6962589146688097851"><i class=" googleplayanim fa-brands fa-google-play"></i></a>
+
+
+        <p class="copyright">© 2020 Manan Parikh. All rights reserved.</p>
+      </div>
+
+
+
     </div>
-  <div class="skillsect" id="skillsect">
-  <h2 class="tech">Projects</h2>
-  <p>Always delivering more than expected.</p>
-  <div class="statsSection" id="stats">
-    <div class="container-projects">
-      <ul>
-        <li class="list activeselection" data-color="#d2e8f2" data-filter="all">All</li>
-        <li class="list" data-color="#2E0249" data-filter="android">Android</li>
-        <li class="list" data-color="#233E8B" data-filter="unity">Unity</li>
-        <li class="list" data-color="#CCD6A6" data-filter="ios">IOS</li>
-        <li class="list" data-color="#EB4747" data-filter="reactnative">React-Native</li>
-        <li class="list" data-color="#892CDC" data-filter="web-sites">Websites</li>
-        <li class="list" data-color="#FC5185" data-filter-published="published">Published Apps</li>
+  </div>
+
+
+  <section class="modallistall">
+    <!-- <div id="modal">
+      <div class="projectcontent">
+        <h1 style="padding: 20px">CONNECT 3</h1>
+        <div class="projflexabout">
+          <div class="projimg w50">
+            <img src="androidimages/connect3.jpeg" alt="" style="width:50%;">
+          </div>
+          <p>This is a simple 2 player android game in which, the user who connects 3 tokens first -Wins.</p>
+        </div>
+        <a class="closeproj" onclick="modalToggle()"><i class="fa-solid closemodal fa-xmark"></i></a>
+      </div>
+    </div> -->
+    <div id="modal1">
+      <div class="projectcontent">
+        <h1 style="padding: 20px">Blockszz</h1>
+        <div class="projflexabout">
+          <div class="projimg w50">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/dodgeblockmenu.jpeg" alt="" style="width:500px !important;" class=" w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/dodgeblock.jpeg" alt="" style="width:500px !important;" class=" w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/dodgeblockover.jpeg" alt="" style="width:500px !important;" class=" w-100">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <i class="carousel-control-prev-icon fa-solid fa-chevron-left" aria-hidden="true"
+                  style="font-size: 35px;"></i>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <i class="carousel-control-next-icon fa-solid fa-chevron-right" aria-hidden="true"
+                  style="font-size: 35px"></i>
+              </button>
+            </div>
+          </div>
+          <p>A thrilling gaming experience that turns the ordinary into extraordinary! 
+            Developed using Unity, this action-packed game challenges players to navigate through moving blocks while strategically using a variety of power-ups to stay ahead. 
+            Overcoming development challenges, I crafted a seamless gameplay with captivating visuals. 
+            The incorporation of engaging power-ups adds an extra dimension to the fun, keeping players hooked.
+            <br><em style="font-weight: bolder; font-size:20px;">Now Available in Google Play!!</em></p>
+        </div>
+        <a href='https://play.google.com/store/apps/details?id=com.DefaultCompany.Dodgetheblocks&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
+          class="certificate"><img alt='Get it on Google Play'
+            src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width='25%'
+            class="projmade" /></a>
+        <a class="closeproj" onclick="modal1Toggle()"><i class="fa-solid closemodal fa-xmark"></i></a>
+      </div>
+    </div>
+    <div id="modal2">
+      <div class="projectcontent">
+        <h1 style="padding: 20px">RefuIndia</h1>
+        <div class="projflexabout">
+          <div class="projimg w50">
+
+            <div id="ioscarousels" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="iosimages/ios proj1.jpeg" alt="" style="width:25% !important;" class=" w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="iosimages/iosproj2.jpeg" alt="" style="width:25% !important;" class=" w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="iosimages/iosproj3.jpeg" alt="" style="width:25% !important;" class=" w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="iosimages/iosproj4.jpeg" alt="" style="width:25% !important;" class=" w-100">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#ioscarousels" data-bs-slide="prev">
+                <i class="carousel-control-prev-icon fa-solid fa-chevron-left" aria-hidden="true"
+                  style="font-size: 35px;"></i>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#ioscarousels" data-bs-slide="next">
+                <i class="carousel-control-next-icon fa-solid fa-chevron-right" aria-hidden="true"
+                  style="font-size: 35px"></i>
+              </button>
+            </div>
+          </div>
+          <ul class="projlist">
+        <li><p>Using agile development approaches to work with a group of developers and designers to produce a scalable and reliable solution.</p></li>
+        <li><p>Google Maps API was used, providing a smooth user experience, to assist migrants in finding their way throughout India.</p></li>
+        <li><p>Designed a user-friendly user interface for the Refu-India program, which aims to give Indian refugees access to vital information so they may get in touch with missing family members and establish their legal identities.</li>
+        <li><p>To make sure the program was free of faults and problems, QA, unit testing, and debugging were conducted.</p></li>
+        <li><p>Wrote clean, modular, and reusable code that complied with software development standards and contributed to the creation of the product.</p></li>
       </ul>
-      <div class="projectsdone col-sm-15 container1">
-        <div class="animate__animated projmade projectbox card1" data-items="android" data-items-published="">
-          <div class="projtext imgBx">
-          <img src="androidimages/connect3.jpeg" alt="android">
         </div>
-        <div class="content">
-          <div class="contentBx">
-            <h3 style="">Connect3</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger" onclick="modalToggle()"><span>Learn More</span></a>
-
-          </div>
-        </div>
+        <form class="getdocument certificate1" action="iosimages/ios dev certificate.jpeg" method="get">
+          <button class="certificateios btn btn-sm btn-dark"><i class="fa fa-download"></i><span>Internship
+              Certificate</span></button>
+        </form>
+        <a class="closeproj" onclick="modal2Toggle()"><i class="fa-solid closemodal fa-xmark"></i></a>
       </div>
-        <div class="animate__animated projmade projectbox card1 " data-items="unity" data-items-published="published">
-          <div class="projtext imgBx">
-          <img src="images/dodgeblock.jpeg" alt="unity">
-        </div>
-          <div class="content">
-            <div class="contentBx">
-              <h3 style="">Blockzzs</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger " onclick="modal1Toggle()"><span>Learn More</span></a>
+    </div>
+    <div id="modal3">
+      <div class="projectcontent">
+        <h1 style="padding: 20px">Super-Cars 2020</h1>
+        <div class="projflexabout">
+          <div class="projimg w50">
+            <div id="supercarscarousels" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="reactimg/supercarapploading.jpeg" alt="" style="width:25% !important;" class=" w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="reactimg/supercarappimg1.jpeg" alt="" style="width:25% !important;" class=" w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="reactimg/supercarappimg2.jpeg" alt="" style="width:25% !important;" class=" w-100">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#supercarscarousels"
+                data-bs-slide="prev">
+                <i class="carousel-control-prev-icon fa-solid fa-chevron-left" aria-hidden="true"
+                  style="font-size: 35px;"></i>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#supercarscarousels"
+                data-bs-slide="next">
+                <i class="carousel-control-next-icon fa-solid fa-chevron-right" aria-hidden="true"
+                  style="font-size: 35px"></i>
+              </button>
             </div>
           </div>
+          <p>Super-Cars 2020 is a captivating mobile app developed using React-Native and JavaScript, allowing car enthusiasts to explore a curated collection of exotic cars that were popular in 2020. 
+            Powered by a local database, the app provides users with comprehensive information and stunning visuals of luxurious and high-performance vehicles. 
+            With a focus on performance and user experience, the app offers fast and seamless access to detailed specifications, including engine details, horsepower, top speed, and other key features.
+            Super-Cars 2020 combines cutting-edge technologies and meticulously collected data to create an immersive and informative experience for car enthusiasts worldwide.</p>
         </div>
-        <div class="animate__animated projmade projectbox card1" data-items="ios" data-items-published="">
-          <div  class="projtext imgBx">
-          <img src="iosimages/iosproj1refu.jpeg" alt="swift-ios">
-        </div>
-          <div class="content">
-            <div class="contentBx" id="contenttext">
-              <h3 style="">RefuIndia</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger " onclick="modal2Toggle()"><span>Learn More</span></a>
-
+        <a class="closeproj" onclick="modal3Toggle()"><i class="fa-solid closemodal fa-xmark"></i></a>
+      </div>
+    </div>
+    <!-- <div id="modal4">
+      <div class="projectcontent">
+        <h1 style="padding: 20px">Silent Mode Toggle</h1>
+        <div class="projflexabout">
+          <div class="projimg w50">
+            <div id="silentmodecarousels" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="androidimages/silenmodeon.jpeg" alt="" style="width:25% !important;" class=" w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="androidimages/silentmodeoff.jpeg" alt="" style="width:25% !important;" class=" w-100">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#silentmodecarousels"
+                data-bs-slide="prev">
+                <i class="carousel-control-prev-icon fa-solid fa-chevron-left" aria-hidden="true"
+                  style="font-size: 35px;"></i>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#silentmodecarousels"
+                data-bs-slide="next">
+                <i class="carousel-control-next-icon fa-solid fa-chevron-right" aria-hidden="true"
+                  style="font-size: 35px"></i>
+              </button>
             </div>
           </div>
+          <p>This basic android application toggles between silent mode in your mobile device.
+            This application can also be used in widgets in android for muting all sounds except media</p>
         </div>
-        <div class="animate__animated projmade projectbox card1" data-items="reactnative" data-items-published="">
-          <div class="projtext imgBx">
-           <img src="reactimg/supercarappproj.jpeg" alt="swift-ios">
-         </div>
-           <div class="content">
-             <div class="contentBx" id="contenttext">
-               <h3 style="">Super-Cars</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger " onclick="modal3Toggle()"><span>Learn More</span></a>
-
-             </div>
-           </div>
-         </div>
-
-         <div class="animate__animated projmade projectbox card1 " data-items="android" data-items-published="">
-           <div class="projtext imgBx">
-           <img src="androidimages/silenmodeon.jpeg" alt="android">
-         </div>
-         <div class="content">
-           <div class="contentBx" id="contenttext">
-             <h3 style="">Silent Mode Toggle</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger " onclick="modal4Toggle()"><span>Learn More</span></a>
-
-           </div>
-         </div>
-       </div>
-       <div class="animate__animated projmade projectbox card1" data-items="web-sites" data-items-published="">
-         <div class="projtext imgBx">
-         <img src="images/supercarround.jpeg" alt="unity">
-       </div>
-         <div class="content">
-           <div class="contentBx" id="contenttext">
-             <h3 style="">Super-Cars</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger " href="https://manan50.github.io/Supercars/"><span>Open</span></a>
-
-           </div>
-         </div>
-       </div>
-       <div class="animate__animated projmade projectbox card1" data-items="unity" data-items-published="published">
-         <div class="projtext imgBx">
-         <img src="images/hexagon.jpeg" alt="unity">
-       </div>
-         <div class="content">
-           <div class="contentBx" id="contenttext">
-             <h3 style="">Ultimate Hexagon</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger " onclick="modal5Toggle()"><span>Learn More</span></a>
-
-           </div>
-         </div>
-       </div>
-
-      <div class="animate__animated projmade projectbox card1 " data-items="android" data-items-published="published">
-        <div class="projtext imgBx">
-        <img src="androidimages/viplayer.jpeg" alt="android">
+        <a class="closeproj" onclick="modal4Toggle()"><i class="fa-solid closemodal fa-xmark"></i></a>
       </div>
-      <div class="content">
-        <div class="contentBx" id="contenttext">
-          <h3 style="">ViPlayer</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger " onclick="modal6Toggle()"><span>Learn More</span></a>
-
+    </div> -->
+    <div id="modal5">
+      <div class="projectcontent">
+        <h1 style="padding: 20px">Ultimate Hexagon</h1>
+        <div class="projflexabout">
+          <div class="projimg w50">
+            <div id="hexagoncarousels" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/hexagonemenu.jpeg" alt="" style="width:25% !important;" class=" w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/hexagon.jpeg" alt="" style="width:25% !important;" class=" w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/gameover hexagone.jpeg" alt="" style="width:25% !important;" class=" w-100">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#hexagoncarousels"
+                data-bs-slide="prev">
+                <i class="carousel-control-prev-icon fa-solid fa-chevron-left" aria-hidden="true"
+                  style="font-size: 35px;"></i>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#hexagoncarousels"
+                data-bs-slide="next">
+                <i class="carousel-control-next-icon fa-solid fa-chevron-right" aria-hidden="true"
+                  style="font-size: 35px"></i>
+              </button>
+            </div>
+          </div>
+          <p>2-D Hypercasual Arcade Game. There is a Small Sphere which revolves by touching Left and Right to Dodge the
+            incoming hexagon's.
+            <br><em style="font-weight: bolder; font-size:20px;">Now Available in Google Play!!</em></p>
         </div>
+        <a href='https://play.google.com/store/apps/details?id=com.DefaultCompany.UltimateHexagon&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
+          class="certificate"><img alt='Get it on Google Play'
+            src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width='25%'
+            class="projmade" /></a>
+        <a class="closeproj" onclick="modal5Toggle()"><i class="fa-solid closemodal fa-xmark"></i></a>
       </div>
     </div>
-    <div class="animate__animated projmade projectbox card1" data-items="unity" data-items-published="published">
-      <div class="projtext imgBx">
-      <img src="images/flyflygame.jpeg" alt="unity">
-    </div>
-      <div class="content">
-        <div class="contentBx" id="contenttext">
-          <h3 style="">FlyFly-TillYouScore</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger " onclick="modal7Toggle()"><span>Learn More</span></a>
-
+    <div id="modal6">
+      <div class="projectcontent">
+        <h1 style="padding: 20px">ViPlayer</h1>
+        <div class="projflexabout">
+          <div class="projimg w50">
+            <div id="viplayercarousels" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="androidimages/viplayerimg1.jpeg" alt="" style="width:25% !important;" class=" w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="androidimages/viplayerimg2.jpeg" alt="" style="width:25% !important;" class=" w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="androidimages/viplayerimg3.jpeg" alt="" style="width:25% !important;" class=" w-100">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#viplayercarousels"
+                data-bs-slide="prev">
+                <i class="carousel-control-prev-icon fa-solid fa-chevron-left" aria-hidden="true"
+                  style="font-size: 35px;"></i>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#viplayercarousels"
+                data-bs-slide="next">
+                <i class="carousel-control-next-icon fa-solid fa-chevron-right" aria-hidden="true"
+                  style="font-size: 35px"></i>
+              </button>
+            </div>
+          </div>
+          <p>Vi-Player, a music player app crafted solely by a single developer using Java for Android, showcases an impressive feature set, encompassing high-quality sound, an intuitive user interface, seamless music organization, and personalized settings. 
+            Throughout its development journey, various challenges were overcome, such as optimizing audio performance and achieving smooth track transitions. 
+            Despite being a solo project, Vi-Player emerged victorious, capturing the hearts of users with its exceptional functionality and garnering significant downloads and high user ratings.
+            <br><em style="font-weight: bolder; font-size:20px;">Now Available in Google Play!!</em></p>
         </div>
+        <a href='https://play.google.com/store/apps/details?id=com.takeaim.musicplayer&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
+          class="certificate"><img alt='Get it on Google Play'
+            src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width='25%'
+            class="projmade" /></a>
+        <a class="closeproj" onclick="modal6Toggle()"><i class="fa-solid closemodal fa-xmark"></i></a>
       </div>
     </div>
-    <div class="animate__animated projmade projectbox card1" data-items="web-sites" data-items-published="">
-      <div class="projtext imgBx">
-      <img src="images/dice.jpeg" alt="unity">
-    </div>
-      <div class="content">
-        <div class="contentBx" id="contenttext">
-          <h3 style="">Dicey</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger " href="https://manan50.github.io/diceGame/"><span>Open</span></a>
+    <div id="modal7">
+      <div class="projectcontent">
+        <h1 style="padding: 20px">FlyFly-TillYouScore</h1>
+        <div class="projflexabout">
+          <div class="projimg w50">
+            <div id="flyflycarousels" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <iframe style=" width: 100%; height: 50vh;" src="https://www.youtube.com/embed/CZlJ93OC5tU"
+                    title="FlyFly-TillYouScore(Link in the Description)" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Hornetss.jpeg" alt="" style="width:25% !important;" class=" w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/ssheli.jpeg" alt="" style="width:25% !important;" class=" w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Dragonfss.jpeg" alt="" style="width:25% !important;" class=" w-100">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#flyflycarousels"
+                data-bs-slide="prev">
+                <i class="carousel-control-prev-icon fa-solid fa-chevron-left" aria-hidden="true"
+                  style="font-size: 35px;"></i>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#flyflycarousels"
+                data-bs-slide="next">
+                <i class="carousel-control-next-icon fa-solid fa-chevron-right" aria-hidden="true"
+                  style="font-size: 35px"></i>
+              </button>
+            </div>
+          </div>
+          <p>This 2D game is clone of popular Indie Game known as Flappy Bird.
+            But this game adds meaning in collecting coins as you get to buy different playing zones.
+            Each with increasing difficulty level as you progress.
+            <br><em style="font-weight: bolder; font-size:20px;">Now Available in Google Play!!</em></p>
 
         </div>
+        <a href='https://play.google.com/store/apps/details?id=com.DefaultCompany.FlyFlytillYouScore&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
+          class="certificate"><img alt='Get it on Google Play'
+            src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width='25%'
+            class="projmade" /></a>
+        <a class="closeproj" onclick="modal7Toggle()"><i class="fa-solid closemodal fa-xmark"></i></a>
       </div>
     </div>
-    <div class="animate__animated projmade projectbox card1" data-items="unity" data-items-published="">
-      <div class="projtext imgBx">
-      <img src="images/dropit.jpeg" alt="unity">
-    </div>
-      <div class="content">
-        <div class="contentBx" id="contenttext">
-          <h3 style="">Drop-Catch 3D</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger " onclick="modal8Toggle()"><span>Learn More</span></a>
-
+    <!-- <div id="modal8">
+      <div class="projectcontent">
+        <h1 style="padding: 20px">Stocks/Crypto-Price Prediction</h1>
+        <div class="projflexabout">
+          <div class="projimg w50">
+            <div id="dropitcarousels" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/dropitimg1.jpeg" alt="" style="width:400px !important; " class=" w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/dropitimg2.jpeg" alt="" style="width:400px !important; " class=" w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/dropitimg3.jpeg" alt="" style="width:400px !important; " class=" w-100">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#dropitcarousels"
+                data-bs-slide="prev">
+                <i class="carousel-control-prev-icon fa-solid fa-chevron-left" aria-hidden="true"
+                  style="font-size: 35px;"></i>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#dropitcarousels"
+                data-bs-slide="next">
+                <i class="carousel-control-next-icon fa-solid fa-chevron-right" aria-hidden="true"
+                  style="font-size: 35px"></i>
+              </button>
+            </div>
+          </div>
+          <p>Developed an advanced LSTM-based model to accurately predict Stocks/Crypto prices with high precision and reliability.
+            This project showcases my expertise in leveraging LSTM neural networks for Stocks/Crypto price prediction. By implementing state-of-the-art deep learning techniques, the model achieves exceptional accuracy in forecasting Bitcoin prices, enabling informed decision-making in the volatile cryptocurrency market.
+            </p>
         </div>
+        <a class="closeproj" onclick="modal8Toggle()"><i class="fa-solid closemodal fa-xmark"></i></a>
       </div>
-    </div>
-    <div class="animate__animated projmade projectbox card1" data-items="web-sites" data-items-published="">
-      <div class="projtext imgBx">
-      <img src="images/fitnessrounddemo.jpeg" alt="unity">
-    </div>
-      <div class="content">
-        <div class="contentBx" id="contenttext">
-          <h3 style="">Fitness</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger " href="https://manan50.github.io/fitness/"><span>Open</span></a>
-
+    </div> -->
+    <div id="modal9">
+      <div class="projectcontent">
+        <h1 style="padding: 20px">Alpha-Learners</h1>
+        <div class="projflexabout">
+          <div class="projimg w50">
+            <div id="Alphacarousels" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/Alpha-count.jpeg" alt="" style="width:95%; " class=" w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alphagame.jpeg" alt="" style="width:95%; " class=" w-100">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#Alphacarousels" data-bs-slide="prev">
+                <i class="carousel-control-prev-icon fa-solid fa-chevron-left" aria-hidden="true"
+                  style="font-size: 35px;"></i>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#Alphacarousels" data-bs-slide="next">
+                <i class="carousel-control-next-icon fa-solid fa-chevron-right" aria-hidden="true"
+                  style="font-size: 35px"></i>
+              </button>
+            </div>
+          </div>
+          <p>Kids Game, which enables them to learn Alphabets by Matching the right ones together.
+            Made in Unity, This educative game is made for kids in nursery.
+            It helps kids in learning alphabets in Uppercase as well as Lowercase.</p>
         </div>
+        <a class="closeproj" onclick="modal9Toggle()"><i class="fa-solid closemodal fa-xmark"></i></a>
       </div>
     </div>
-    <div class="animate__animated projmade projectbox card1" data-items="unity" data-items-published="">
-      <div class="projtext imgBx">
-      <img src="images/Alpha-count.jpeg" alt="unity">
-    </div>
-      <div class="content">
-        <div class="contentBx" id="contenttext">
-          <h3 style="">Alpha-Learners</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger " onclick="modal9Toggle()"><span>Learn More</span></a>
-
+    <div id="modal10">
+      <div class="projectcontent">
+        <h1 style="padding: 20px">Lost Trials</h1>
+        <div class="projflexabout">
+          <div class="projimg w50">
+            <div id="losttrialscarousels" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <iframe style=" width: 100%; height: 50vh;" src="https://www.youtube.com/embed/D2f99hnUa7w"
+                    title="Lost-Trials -- Indie 2D Platformer GameTrailer" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Mainmenu.jpeg" alt="" style="width: 95%;" class=" w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/intro.jpeg" alt="" style="width: 95%;" class=" w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/killBoss.jpeg" alt="" style="width: 95%;" class=" w-100">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#losttrialscarousels"
+                data-bs-slide="prev">
+                <i class="carousel-control-prev-icon fa-solid fa-chevron-left" aria-hidden="true"
+                  style="font-size: 35px;"></i>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#losttrialscarousels"
+                data-bs-slide="next">
+                <i class="carousel-control-next-icon fa-solid fa-chevron-right" aria-hidden="true"
+                  style="font-size: 35px"></i>
+              </button>
+            </div>
+          </div>
+          <p>Developed using C#, Photon Pun, Google Cloud, Asset Store, and Play Services, "Lost Trials" offers an immersive gaming experience that can be enjoyed both in single-player and multiplayer modes.
+            Filled with challenges and triumphs, I harnessed the power of C# to build the game's mechanics and gameplay features, while leveraging Photon Pun for seamless multiplayer functionality.
+            Integrating Google Cloud services allowed me to enhance the game's performance and deliver a smooth user experience.
+            Throughout the development process, I faced and overcame numerous challenges, including optimizing network synchronization, fine-tuning gameplay balance, and creating engaging level designs. 
+            Each obstacle was an opportunity for growth and improvement.<br><em
+              style="font-weight: bolder; font-size:20px;">Now Available in Google Play!!</em></p>
         </div>
+        <a href='https://play.google.com/store/apps/details?id=com.TakeAimStudios.LostTrials&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
+          class="certificate"><img alt='Get it on Google Play'
+            src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width='25%'
+            class="projmade" /></a>
+        <a class="closeproj" onclick="modal10Toggle()"><i class="fa-solid closemodal fa-xmark"></i></a>
       </div>
     </div>
-    <div class="animate__animated projmade projectbox card1" data-items="unity" data-items-published="published">
-      <div class="projtext imgBx">
-      <img src="images/Gametapitapicon.jpeg" alt="unity">
-    </div>
-      <div class="content">
-        <div class="contentBx" id="contenttext">
-          <h3 style="">Lost-Trials</h3><a class="openproj btn btn-sm hoverbtn btn-outline-danger " onclick="modal10Toggle()"><span>Learn More</span></a>
-
-        </div>
-      </div>
-    </div>
-
-    </div>
-  </div>
-  </div>
-  </div>
-
-  <div class="connect" >
-    <h2>FOUND MY WORK INTERESTING?</h2>
-    <h3>I am passionate about learning and trying out new things. 😄</h3>
-    <h4> Would Love to hear from ya! 😉</h4>
-  <div class="contact" id="contactitem">
-  <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" xmlns="" class="svgcolor-light">
-      <path d="M0 0 L50 100 L100 0 Z" data-color='#d2e8f2'></path>
-  </svg>
-  <h1 style="margin-top: 20px; color: #ffabe1; font-family: 'Barlow Condensed', sans-serif; line-height: 5.2rem;">Contact</h1>
-  <section class="container-fluid ">
-  <form class="submit" name="my_form" action="https://getform.io/f/108e8e04-ebea-4e1e-8bda-888a2a25d5cf" method="POST" enctype="multipart/form-data">
-  <div class="col-sm-6 contactform">
-    <input type="text" name="first-name" class="form-control" placeholder="First name" aria-label="First name" required="required">
-  </div>
-
-  <div class="col-sm-6 contactform">
-        <input type="email" name="email" class="form-control" id="email-id" placeholder="@example.com" required="required">
-  </div>
-
-  <div class="col-sm-6 contactform">
-    <textarea type="text" name="text_message" class="form-control text-area " id="text-area" maxlength="1000" required="required" placeholder="Message"></textarea>
-  </div >
-  <br>
-  <button type="submit" value="Submit"  style="color: #e8e8e8;" class="btn btn-sm btn-dark">Submit</button>
-  </form>
   </section>
-  </div>
-  </div>
-  <br>
-  <br>
-  <div class="social-media">
-  <a href=""><i class="fa-brands fa-facebook"></i></a>
-  <a href="https://www.instagram.com/manan_parikh_/"><i class="fa-brands fa-instagram"></i></a>
-  <a href="https://www.linkedin.com/in/manan-parikh-3a6410182/"><i class="fa-brands fa-linkedin"></i></a>
-  <a href="https://play.google.com/store/apps/dev?id=6962589146688097851"><i class="fa-brands fa-google-play"></i></a>
 
-
-  <p class="copyright">© 2020 Manan Parikh. All rights reserved.</p>
-  </div>
-
-
-
-  </div>
-</div>
-
-
-<section class="modallistall">
-  <div id="modal" >
-  <div class="projectcontent">
-    <h1 style="padding: 20px">CONNECT 3</h1>
-    <div class="projflexabout">
-      <div class="projimg w50">
-        <img src="androidimages/connect3.jpeg" alt=""style="width:50%;">
-      </div>
-      <p>This is a simple 2 player android game in which, the user who connects 3 tokens first -Wins.</p>
-    </div >
-      <a class="closeproj"  onclick="modalToggle()"><i class="fa-solid fa-xmark"></i></a>
-  </div>
-  </div>
-<div id="modal1">
-  <div class="projectcontent">
-    <h1 style="padding: 20px">Blockszz</h1>
-    <div class="projflexabout">
-      <div class="projimg w50">
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/dodgeblockmenu.jpeg" alt=""style="width:500px !important;" class=" w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="images/dodgeblock.jpeg" alt=""style="width:500px !important;" class=" w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="images/dodgeblockover.jpeg" alt=""style="width:500px !important;" class=" w-100">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <i class="carousel-control-prev-icon fa-solid fa-chevron-left" aria-hidden="true" style="font-size: 35px;"></i>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <i class="carousel-control-next-icon fa-solid fa-chevron-right" aria-hidden="true" style="font-size: 35px"></i>
-  </button>
-</div>
-      </div>
-      <p>2D HyperCasual Arcade Game made with unity. Aim of this game is to dodge as many falling blocks as you can and make a record for yourself.
-        <br><em style="font-weight: bolder; font-size:20px;">Now Available in Google Play!!</em></p>
-    </div >
-  <a href='https://play.google.com/store/apps/details?id=com.DefaultCompany.Dodgetheblocks&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' class="certificate"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width='25%' class="projmade"/></a>
-      <a class="closeproj"  onclick="modal1Toggle()"><i class="fa-solid fa-xmark"></i></a>
-  </div>
-</div>
-<div id="modal2">
-  <div class="projectcontent">
-    <h1 style="padding: 20px">RefuIndia</h1>
-    <div class="projflexabout">
-      <div class="projimg w50">
-
-        <div id="ioscarousels" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="iosimages/ios proj1.jpeg" alt=""style="width:25% !important;" class=" w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="iosimages/iosproj2.jpeg" alt=""style="width:25% !important;" class=" w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="iosimages/iosproj3.jpeg" alt=""style="width:25% !important;" class=" w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="iosimages/iosproj4.jpeg" alt=""style="width:25% !important;" class=" w-100">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#ioscarousels" data-bs-slide="prev">
-    <i class="carousel-control-prev-icon fa-solid fa-chevron-left" aria-hidden="true" style="font-size: 35px;"></i>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#ioscarousels" data-bs-slide="next">
-    <i class="carousel-control-next-icon fa-solid fa-chevron-right" aria-hidden="true" style="font-size: 35px"></i>
-  </button>
-</div>
-      </div>
-      <p>Made this during the internship program held by Cognitio Knowledge Tech Pvt.Ltd which lasted for 1 month and the project took another 1 month to build. This was build in team of 2.</p>
-  </div >
-  <form class="getdocument certificate1" action="iosimages/ios dev certificate.jpeg" method="get">
-  <button class="certificate btn btn-sm btn-dark"><i class="fa fa-download"></i><span>Internship Certificate</span></button>
-</form>
-      <a class="closeproj"  onclick="modal2Toggle()"><i class="fa-solid fa-xmark"></i></a>
-  </div>
-</div>
-<div id="modal3">
-  <div class="projectcontent">
-    <h1 style="padding: 20px">Super-Cars 2020</h1>
-    <div class="projflexabout">
-      <div class="projimg w50">
-        <div id="supercarscarousels" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="reactimg/supercarapploading.jpeg" alt=""style="width:25% !important;" class=" w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="reactimg/supercarappimg1.jpeg" alt=""style="width:25% !important;" class=" w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="reactimg/supercarappimg2.jpeg" alt=""style="width:25% !important;" class=" w-100">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#supercarscarousels" data-bs-slide="prev">
-    <i class="carousel-control-prev-icon fa-solid fa-chevron-left" aria-hidden="true" style="font-size: 35px;"></i>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#supercarscarousels" data-bs-slide="next">
-    <i class="carousel-control-next-icon fa-solid fa-chevron-right" aria-hidden="true" style="font-size: 35px"></i>
-  </button>
-</div>
-      </div>
-      <p>Web-Application made in React-Native using JS.
-        This app gives user the information about the specification of different exotice cars that were popular in 2020 including their price.</p>
-    </div >
-      <a class="closeproj"  onclick="modal3Toggle()"><i class="fa-solid fa-xmark"></i></a>
-  </div>
-</div>
-<div id="modal4">
-  <div class="projectcontent">
-    <h1 style="padding: 20px">Silent Mode Toggle</h1>
-    <div class="projflexabout">
-      <div class="projimg w50">
-        <div id="silentmodecarousels" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="androidimages/silenmodeon.jpeg" alt=""style="width:25% !important;" class=" w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="androidimages/silentmodeoff.jpeg" alt=""style="width:25% !important;" class=" w-100">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#silentmodecarousels" data-bs-slide="prev">
-    <i class="carousel-control-prev-icon fa-solid fa-chevron-left" aria-hidden="true" style="font-size: 35px;"></i>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#silentmodecarousels" data-bs-slide="next">
-    <i class="carousel-control-next-icon fa-solid fa-chevron-right" aria-hidden="true" style="font-size: 35px"></i>
-  </button>
-</div>
-      </div>
-      <p>This basic android application toggles between silent mode in your mobile device.
-        This application can also be used in widgets in android for muting all sounds except media</p>
-    </div >
-      <a class="closeproj"  onclick="modal4Toggle()"><i class="fa-solid fa-xmark"></i></a>
-  </div>
-</div>
-<div id="modal5">
-  <div class="projectcontent">
-    <h1 style="padding: 20px">Ultimate Hexagon</h1>
-    <div class="projflexabout">
-      <div class="projimg w50">
-          <div id="hexagoncarousels" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/hexagonemenu.jpeg" alt=""style="width:25% !important;" class=" w-100">
-      </div>
-      <div class="carousel-item">
-        <img src="images/hexagon.jpeg" alt=""style="width:25% !important;" class=" w-100">
-      </div>
-      <div class="carousel-item">
-        <img src="images/gameover hexagone.jpeg" alt=""style="width:25% !important;" class=" w-100">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#hexagoncarousels" data-bs-slide="prev">
-      <i class="carousel-control-prev-icon fa-solid fa-chevron-left" aria-hidden="true" style="font-size: 35px;"></i>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#hexagoncarousels" data-bs-slide="next">
-      <i class="carousel-control-next-icon fa-solid fa-chevron-right" aria-hidden="true" style="font-size: 35px"></i>
-    </button>
-  </div>
-      </div>
-      <p>2-D Hypercasual Arcade Game. There is a Small Sphere which revolves by touching Left and Right to Dodge the incoming hexagon's.
-        <br><em style="font-weight: bolder; font-size:20px;">Now Available in Google Play!!</em></p>
-    </div >
-    <a href='https://play.google.com/store/apps/details?id=com.DefaultCompany.UltimateHexagon&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'  class="certificate"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width='25%' class="projmade"/></a>
-      <a class="closeproj"  onclick="modal5Toggle()"><i class="fa-solid fa-xmark"></i></a>
-  </div>
-</div>
-<div id="modal6">
-  <div class="projectcontent">
-    <h1 style="padding: 20px">ViPlayer</h1>
-    <div class="projflexabout">
-      <div class="projimg w50">
-        <div id="viplayercarousels" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="androidimages/viplayerimg1.jpeg" alt=""style="width:25% !important;" class=" w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="androidimages/viplayerimg2.jpeg" alt=""style="width:25% !important;" class=" w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="androidimages/viplayerimg3.jpeg" alt=""style="width:25% !important;" class=" w-100">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#viplayercarousels" data-bs-slide="prev">
-    <i class="carousel-control-prev-icon fa-solid fa-chevron-left" aria-hidden="true" style="font-size: 35px;"></i>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#viplayercarousels" data-bs-slide="next">
-    <i class="carousel-control-next-icon fa-solid fa-chevron-right" aria-hidden="true" style="font-size: 35px"></i>
-  </button>
-</div>
-      </div>
-      <p>Music player with very different visuals and attractive UIs.
-        You can share the songs from it set ringtone and even change the visualizer if you are bored of it.
-      <br><em style="font-weight: bolder; font-size:20px;">Now Available in Google Play!!</em></p>
-    </div >
-    <a href='https://play.google.com/store/apps/details?id=com.takeaim.musicplayer&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'class="certificate"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width='25%' class="projmade"/></a>
-      <a class="closeproj"  onclick="modal6Toggle()"><i class="fa-solid fa-xmark"></i></a>
-  </div>
-</div>
-<div id="modal7">
-  <div class="projectcontent">
-    <h1 style="padding: 20px">FlyFly-TillYouScore</h1>
-    <div class="projflexabout">
-      <div class="projimg w50">
-        <div id="flyflycarousels" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-    <iframe style=" width: 100%; height: 50vh;" src="https://www.youtube.com/embed/CZlJ93OC5tU" title="FlyFly-TillYouScore(Link in the Description)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-    </div>
-    <div class="carousel-item">
-      <img src="images/Hornetss.jpeg" alt=""style="width:25% !important;" class=" w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="images/ssheli.jpeg" alt=""style="width:25% !important;" class=" w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="images/Dragonfss.jpeg" alt=""style="width:25% !important;" class=" w-100">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#flyflycarousels" data-bs-slide="prev">
-    <i class="carousel-control-prev-icon fa-solid fa-chevron-left" aria-hidden="true" style="font-size: 35px;"></i>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#flyflycarousels" data-bs-slide="next">
-    <i class="carousel-control-next-icon fa-solid fa-chevron-right" aria-hidden="true" style="font-size: 35px"></i>
-  </button>
-</div>
-      </div>
-      <p>This 2D game is clone of popular Indie Game known as Flappy Bird.
-        But this game adds meaning in collecting coins as you get to buy different playing zones.
-        Each with increasing difficulty level as you progress.
-      <br><em style="font-weight: bolder; font-size:20px;">Now Available in Google Play!!</em></p>
-
-    </div >
-    <a href='https://play.google.com/store/apps/details?id=com.DefaultCompany.FlyFlytillYouScore&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' class="certificate"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'width='25%' class="projmade"/></a>
-      <a class="closeproj"  onclick="modal7Toggle()"><i class="fa-solid fa-xmark"></i></a>
-  </div>
-</div>
-<div id="modal8">
-  <div class="projectcontent">
-    <h1 style="padding: 20px">Drop-It-Basket</h1>
-    <div class="projflexabout">
-      <div class="projimg w50">
-        <div id="dropitcarousels" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/dropitimg1.jpeg" alt=""style="width:400px !important; " class=" w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="images/dropitimg2.jpeg" alt=""style="width:400px !important; " class=" w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="images/dropitimg3.jpeg" alt=""style="width:400px !important; " class=" w-100">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#dropitcarousels" data-bs-slide="prev">
-    <i class="carousel-control-prev-icon fa-solid fa-chevron-left" aria-hidden="true" style="font-size: 35px;"></i>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#dropitcarousels" data-bs-slide="next">
-    <i class="carousel-control-next-icon fa-solid fa-chevron-right" aria-hidden="true" style="font-size: 35px"></i>
-  </button>
-</div>
-      </div>
-      <p>Make the Ball Fall into basket in the timer to complete the following level.
-        3D Arcade game with different and progressive levels.
-        </p>
-    </div >
-      <a class="closeproj"  onclick="modal8Toggle()"><i class="fa-solid fa-xmark"></i></a>
-  </div>
-</div>
-<div id="modal9">
-  <div class="projectcontent">
-    <h1 style="padding: 20px">Alpha-Learners</h1>
-    <div class="projflexabout">
-      <div class="projimg w50">
-        <div id="Alphacarousels" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/Alpha-count.jpeg" alt=""style="width:95%; " class=" w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="images/Alphagame.jpeg" alt=""style="width:95%; " class=" w-100">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#Alphacarousels" data-bs-slide="prev">
-    <i class="carousel-control-prev-icon fa-solid fa-chevron-left" aria-hidden="true" style="font-size: 35px;"></i>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#Alphacarousels" data-bs-slide="next">
-    <i class="carousel-control-next-icon fa-solid fa-chevron-right" aria-hidden="true" style="font-size: 35px"></i>
-  </button>
-</div>
-      </div>
-      <p>Kids Game, which enables them to learn Alphabets by Matching the right ones together.
-        Made in Unity, This educative game is made for kids in nursery.
-        It helps kids in learning alphabets in Uppercase as well as Lowercase.</p>
-    </div >
-      <a class="closeproj"  onclick="modal9Toggle()"><i class="fa-solid fa-xmark"></i></a>
-  </div>
-</div>
-<div id="modal10">
-  <div class="projectcontent">
-    <h1 style="padding: 20px">Lost Trials</h1>
-    <div class="projflexabout">
-      <div class="projimg w50">
-        <div id="losttrialscarousels" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <iframe style=" width: 100%; height: 50vh;"
- src="https://www.youtube.com/embed/D2f99hnUa7w" title="Lost-Trials -- Indie 2D Platformer GameTrailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-    </div>
-    <div class="carousel-item">
-      <img src="images/Mainmenu.jpeg" alt="" style="width: 95%;" class=" w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="images/intro.jpeg" alt=""style="width: 95%;" class=" w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="images/killBoss.jpeg" alt="" style="width: 95%;" class=" w-100">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#losttrialscarousels" data-bs-slide="prev">
-    <i class="carousel-control-prev-icon fa-solid fa-chevron-left" aria-hidden="true" style="font-size: 35px;"></i>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#losttrialscarousels" data-bs-slide="next">
-    <i class="carousel-control-next-icon fa-solid fa-chevron-right" aria-hidden="true" style="font-size: 35px"></i>
-  </button>
-</div>
-      </div>
-      <p>Rig, A traveller in Shapeless World discovers a Portal which takes him inside Tower of Lost Trials,
-        where he tries to uncovers the truth of the tower and then embarks on an action-packed journey through the Tower
-to return back to his World. Throughout the Tower, Rig will have to undergo numerous trials and defeating Bosses, his only goal to return to his World.
- Will He be able to return to his World? Or Will he perish?<br><em style="font-weight: bolder; font-size:20px;">Now Available in Google Play!!</em></p>
-    </div >
-    <a href='https://play.google.com/store/apps/details?id=com.TakeAimStudios.LostTrials&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' class="certificate"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'width='25%' class="projmade"/></a>
-      <a class="closeproj"  onclick="modal10Toggle()"><i class="fa-solid fa-xmark"></i></a>
-  </div>
-</div>
-</section>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="personal-js/typed.min.js" charset="utf-8"></script>
-<script src="personal-js/index.js" charset="utf-8"></script>
-<script src="personal-js/jquery.easypiechart.min.js" charset="utf-8"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="personal-js/typed.min.js" charset="utf-8"></script>
+  <script src="personal-js/index.js" charset="utf-8"></script>
+  <script src="personal-js/jquery.easypiechart.min.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+  </script>
 </body>
+
 </html>
