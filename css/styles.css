@@ -963,7 +963,7 @@ body.day {
   background: #ffce54;
 }
 
-@ (max-width: 768px) {
+@media (max-width: 768px) {
   #sunmoon {
     position: relative;
     width: clamp(100px, 50vmin, 100px);
@@ -982,7 +982,7 @@ body.day {
   }
 }
 
-@ (max-width: 480px) {
+@media (max-width: 480px) {
   #sunmoon {
     position: relative;
     width: clamp(100px, 50vmin, 100px);
@@ -1559,6 +1559,17 @@ body.day {
   transition-timing-function: ease-in-out;
 }
 
+.gitlink {
+  position: relative;
+  top: 5%;
+}
+
+.gitlink a {
+  text-decoration: none;
+  color: white;
+  cursor: url("../images/icons8-sword-64.png"), auto !important;
+}
+
 .projsdone {
   padding: 3% 1%;
 }
@@ -1755,7 +1766,7 @@ body.day {
 }
 
 .closemodal {
-  top: 20px;
+  top: 50px;
   position: relative;
 }
 
@@ -2199,11 +2210,11 @@ header.sticky {
   h5,
   h6,
   p {
-    font-size: 1.7vw !important;
+    font-size: 1.2vw !important;
   }
 
   p {
-    line-height: 5rem !important;
+    line-height: 3rem !important;
   }
 
   h1 {
@@ -2219,11 +2230,11 @@ header.sticky {
   }
 
   .bannercontainer h3 {
-    top: 1px;
+    top: 33px;
   }
 
   .head {
-    left: -6px;
+    top: 80px;
   }
 
   #title2 {
@@ -2232,8 +2243,6 @@ header.sticky {
 
   #aboutme1 {
     font-size: 35px;
-    font-family: "Josefin Sans";
-    top: 73px;
   }
 
   .butn {
@@ -2246,6 +2255,10 @@ header.sticky {
 
   .breadcrumb-item.active {
     font-size: 30px !important;
+  }
+
+  .container1 .card1 .content {
+    bottom: -513px !important;
   }
 }
 
@@ -2279,6 +2292,8 @@ header.sticky {
   display: none;
   color: #fff;
 }
+
+
 
 /* style in gamedev page*/
 .bg:before {
@@ -2507,7 +2522,7 @@ header.sticky {
 }
 
 .container1 .card1:hover .content {
-  bottom: 0;
+  bottom: 0 !important;
   transition-delay: 0s;
 }
 
